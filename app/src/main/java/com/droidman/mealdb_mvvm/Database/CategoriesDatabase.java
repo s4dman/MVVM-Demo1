@@ -1,4 +1,4 @@
-package com.droidman.mealdb_mvvm;
+package com.droidman.mealdb_mvvm.Database;
 
 import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
@@ -8,16 +8,15 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 
+import com.droidman.mealdb_mvvm.Entity.CategoriesEntity;
+import com.droidman.mealdb_mvvm.Dao.CategoriesDao;
+
 @Database(entities = CategoriesEntity.class, version = 1, exportSchema = false)
 public abstract class CategoriesDatabase extends RoomDatabase {
 
     private static CategoriesDatabase instance; // Singleton, means we can't create multiple instance of this DB. Instead we always use same instance everywhere in the app.
     public abstract CategoriesDao categoriesDao(); // Use this method to access our Dao
 
-    /*
-     * Synchronized means only one thread at a time can access this instance
-     * this way you don't create two instances of this DB accidentally, where two different threads try to access this instance at the same time
-     * */
     public static synchronized CategoriesDatabase getInstance(Context context){
         if (instance == null) {
             instance = Room.databaseBuilder(context, CategoriesDatabase.class, "categories_database")

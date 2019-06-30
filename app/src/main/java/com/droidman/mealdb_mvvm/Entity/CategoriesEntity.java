@@ -1,4 +1,4 @@
-package com.droidman.mealdb_mvvm;
+package com.droidman.mealdb_mvvm.Entity;
 
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;

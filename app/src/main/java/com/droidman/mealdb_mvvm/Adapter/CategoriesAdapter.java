@@ -1,4 +1,4 @@
-package com.droidman.mealdb_mvvm;
+package com.droidman.mealdb_mvvm.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.droidman.mealdb_mvvm.Entity.CategoriesEntity;
+import com.droidman.mealdb_mvvm.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +23,11 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
 
     public CategoriesAdapter(Context mContext) {
         this.mContext = mContext;
+    }
+
+    public void setAllCategories(List<CategoriesEntity> allCategories) {
+        this.allCategories = allCategories;
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -38,9 +45,11 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
         Glide.with(mContext)
                 .asBitmap()
                 .load(currentCategory.getImageUrl())
-                .into(viewHolder.catergoriesImage);
+                .into(viewHolder.categoriesImage);
         viewHolder.categoriesName.setText(currentCategory.getName());
         viewHolder.categoriesDesc.setText(currentCategory.getDescription());
+
+
     }
 
     @Override
@@ -49,22 +58,15 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
     }
 
 
-    public void setAllCategories(List<CategoriesEntity> allCategories) {
-        this.allCategories = allCategories;
-        notifyDataSetChanged();
-    }
-
-
-
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        private ImageView catergoriesImage;
+        private ImageView categoriesImage;
         private TextView categoriesName, categoriesDesc;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            catergoriesImage = itemView.findViewById(R.id.categories_imageView);
+            categoriesImage = itemView.findViewById(R.id.categories_imageView);
             categoriesName = itemView.findViewById(R.id.categories_name);
             categoriesDesc = itemView.findViewById(R.id.categories_desc);
         }
