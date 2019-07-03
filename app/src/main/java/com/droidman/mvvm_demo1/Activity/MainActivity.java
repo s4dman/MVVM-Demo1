@@ -1,4 +1,4 @@
-package com.droidman.mealdb_mvvm.Activity;
+package com.droidman.mvvm_demo1.Activity;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -12,10 +12,10 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.androidnetworking.AndroidNetworking;
-import com.droidman.mealdb_mvvm.Adapter.CategoriesAdapter;
-import com.droidman.mealdb_mvvm.Entity.CategoriesEntity;
-import com.droidman.mealdb_mvvm.R;
-import com.droidman.mealdb_mvvm.ViewModel.CategoriesViewModel;
+import com.droidman.mvvm_demo1.Adapter.CategoriesAdapter;
+import com.droidman.mvvm_demo1.Entity.CategoriesEntity;
+import com.droidman.mvvm_demo1.R;
+import com.droidman.mvvm_demo1.ViewModel.CategoriesViewModel;
 
 import java.util.List;
 

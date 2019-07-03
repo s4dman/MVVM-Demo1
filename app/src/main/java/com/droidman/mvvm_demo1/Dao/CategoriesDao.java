@@ -1,11 +1,11 @@
-package com.droidman.mealdb_mvvm.Dao;
+package com.droidman.mvvm_demo1.Dao;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
-import com.droidman.mealdb_mvvm.Entity.CategoriesEntity;
+import com.droidman.mvvm_demo1.Entity.CategoriesEntity;
 import java.util.List;
 
 @Dao

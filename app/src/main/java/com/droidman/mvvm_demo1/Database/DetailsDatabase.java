@@ -1,4 +1,4 @@
-package com.droidman.mealdb_mvvm.Database;
+package com.droidman.mvvm_demo1.Database;
 
 import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
@@ -8,8 +8,8 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 
-import com.droidman.mealdb_mvvm.Dao.DetailsDao;
-import com.droidman.mealdb_mvvm.Entity.DetailsEntity;
+import com.droidman.mvvm_demo1.Dao.DetailsDao;
+import com.droidman.mvvm_demo1.Entity.DetailsEntity;
 
 @Database(entities = DetailsEntity.class, version = 1, exportSchema = false)
 public abstract class DetailsDatabase extends RoomDatabase {

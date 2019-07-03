@@ -1,4 +1,4 @@
-package com.droidman.mealdb_mvvm.Adapter;
+package com.droidman.mvvm_demo1.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,8 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.droidman.mealdb_mvvm.Entity.CategoriesEntity;
-import com.droidman.mealdb_mvvm.R;
+import com.droidman.mvvm_demo1.Entity.CategoriesEntity;
+import com.droidman.mvvm_demo1.R;
 
 import java.util.ArrayList;
 import java.util.List;

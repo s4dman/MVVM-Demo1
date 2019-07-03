@@ -1,19 +1,17 @@
-package com.droidman.mealdb_mvvm.Activity;
+package com.droidman.mvvm_demo1.Activity;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.droidman.mealdb_mvvm.Entity.DetailsEntity;
-import com.droidman.mealdb_mvvm.R;
-import com.droidman.mealdb_mvvm.ViewModel.DetailsViewModel;
+import com.droidman.mvvm_demo1.Entity.DetailsEntity;
+import com.droidman.mvvm_demo1.R;
+import com.droidman.mvvm_demo1.ViewModel.DetailsViewModel;
 
 import java.util.List;
 

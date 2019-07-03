@@ -1,12 +1,12 @@
-package com.droidman.mealdb_mvvm.ViewModel;
+package com.droidman.mvvm_demo1.ViewModel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
-import com.droidman.mealdb_mvvm.Entity.DetailsEntity;
-import com.droidman.mealdb_mvvm.Repository.DetailsRepository;
+import com.droidman.mvvm_demo1.Entity.DetailsEntity;
+import com.droidman.mvvm_demo1.Repository.DetailsRepository;
 
 import java.util.List;
 

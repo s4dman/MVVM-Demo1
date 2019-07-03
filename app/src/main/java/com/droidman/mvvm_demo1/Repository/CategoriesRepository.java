@@ -1,12 +1,12 @@
-package com.droidman.mealdb_mvvm.Repository;
+package com.droidman.mvvm_demo1.Repository;
 
 import android.app.Application;
 import android.arch.lifecycle.LiveData;
 import android.os.AsyncTask;
 
-import com.droidman.mealdb_mvvm.Dao.CategoriesDao;
-import com.droidman.mealdb_mvvm.Database.CategoriesDatabase;
-import com.droidman.mealdb_mvvm.Entity.CategoriesEntity;
+import com.droidman.mvvm_demo1.Dao.CategoriesDao;
+import com.droidman.mvvm_demo1.Database.CategoriesDatabase;
+import com.droidman.mvvm_demo1.Entity.CategoriesEntity;
 
 import java.util.List;
 

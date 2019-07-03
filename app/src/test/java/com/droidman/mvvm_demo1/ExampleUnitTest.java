@@ -1,4 +1,4 @@
-package com.droidman.mealdb_mvvm;
+package com.droidman.mvvm_demo1;
 
 import org.junit.Test;
 
